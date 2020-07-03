@@ -21,6 +21,12 @@
     <PreferenceCategory
         android:key="general_notifications_category"
         android:title="@string/general_notification_header">
+
+        <Preference
+        android:key="notification_animation"
+        android:layout="@layout/notification_animation" 
+        android:order="-999"/>        
+          
         <!-- See all apps button -->
         <Preference
             android:key="all_notifications"

@@ -20,6 +20,12 @@
     android:key="storage_dashboard_fragment"
     android:title="@string/storage_settings"
     settings:keywords="@string/keywords_storage">
+
+   <Preference
+        android:key="storage_animation"
+        android:layout="@layout/storage_animation" 
+        android:order="-999"/>
+
     <com.android.settingslib.widget.SettingsSpinnerPreference
         android:key="storage_spinner"
         android:order="1"
