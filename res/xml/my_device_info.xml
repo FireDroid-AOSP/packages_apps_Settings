@@ -26,6 +26,10 @@
         android:selectable="false"
         android:title="@string/my_device_info_basic_info_category_title">
 
+   <Preference
+        android:key="about_animation"
+        android:layout="@layout/about_animation" />
+
         <!-- Device name -->
         <com.android.settings.widget.ValidatedEditTextPreference
             android:key="device_name"
