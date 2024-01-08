@@ -22,6 +22,7 @@ import com.android.settings.IccLockSettings;
 import com.android.settings.MainClear;
 import com.android.settings.MainClearConfirm;
 import com.android.settings.Settings;
+import com.firedroid.settings.laboratory.LabSettings;
 import com.android.settings.TestingSettings;
 import com.android.settings.TrustedCredentialsSettings;
 import com.android.settings.accessibility.AccessibilityDetailsSettingsFragment;
@@ -384,7 +385,8 @@ public class SettingsGateway {
             BatteryInfoFragment.class.getName(),
             UserAspectRatioDetails.class.getName(),
             LiveDisplaySettings.class.getName(),
-            WifiTetherClientManager.class.getName()
+            WifiTetherClientManager.class.getName(),
+            LabSettings.class.getName()            
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {

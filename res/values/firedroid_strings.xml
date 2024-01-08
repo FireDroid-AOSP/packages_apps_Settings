@@ -5,11 +5,16 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- FireDroid Maintainer -->
-    <string name="FireDroid_maintainer">!!Fire Maintainer!!</string>
+    <string name="FireDroid_maintainer">Fire Maintainer</string>
 
     <!-- FireDroid Release Codename -->
     <string name="FireDroid_codename">Fire Codename</string>
 
     <!-- FireDroid Release Version -->
     <string name="FireDroid_version">Fire Version</string>
+
+    <!-- BonFire -->
+    <string name="firedroid_lab_title">BonFire</string>
+    <string name="firedroid_lab_footer">These features are in Beta stages. Warning: May Burn your device. :XD</string>
+    <string name="firedroid_lab_summary">Ready to Ignite ?</string>
 </resources>
