@@ -4,9 +4,12 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- About device screen, FireDroid Release Version -->
-    <string name="firedroid_release_version">Ignite to FireDroid</string>
-
     <!-- FireDroid Maintainer -->
     <string name="FireDroid_maintainer">!!Fire Maintainer!!</string>
+
+    <!-- FireDroid Release Codename -->
+    <string name="FireDroid_codename">Fire Codename</string>
+
+    <!-- FireDroid Release Version -->
+    <string name="FireDroid_version">Fire Version</string>
 </resources>
