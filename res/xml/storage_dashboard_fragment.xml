@@ -14,12 +14,19 @@
      limitations under the License.
 -->
 
+    <!-- Storage Logo -->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="storage_anime"
+        android:layout="@layout/storage_anime"
+        android:selectable="false"/>
+        
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="storage_dashboard_fragment"
     android:title="@string/storage_settings"
     settings:keywords="@string/keywords_storage">
+
     <com.android.settingslib.widget.SettingsSpinnerPreference
         android:key="storage_spinner"
         android:order="1"

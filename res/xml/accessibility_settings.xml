@@ -14,6 +14,12 @@
      limitations under the License.
 -->
 
+    <!-- Accessibility Logo -->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="accessibility_anime"
+        android:layout="@layout/accessibility_anime"
+        android:selectable="false"/>
+
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"

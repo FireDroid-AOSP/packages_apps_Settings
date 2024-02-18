@@ -14,6 +14,12 @@
   limitations under the License.
 -->
 
+    <!-- Bonfire Logo -->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="bonfire_anime"
+        android:layout="@layout/bonfire_anime"
+        android:selectable="false"/>
+
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
