@@ -13,13 +13,29 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/battery_lottie"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:clickable="false"
+        app:lottie_rawRes="@raw/battery"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="power_usage_summary_screen"
     android:title="@string/power_usage_summary_title"
-    settings:keywords="@string/keywords_battery">
+    settings:keywords="@string/keywords_battery"
+    android:layout_below="@id/battery_lottie">
 
     <com.android.settingslib.widget.UsageProgressBarPreference
         android:key="battery_header"
@@ -76,3 +92,5 @@
         android:selectable="false"
         settings:searchable="false" />
 </PreferenceScreen>
+
+</RelativeLayout>

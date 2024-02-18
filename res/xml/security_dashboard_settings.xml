@@ -14,12 +14,28 @@
   See the License for the specific language governing permissions and
   limitations under the License.
   -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/security_lottie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:clickable="false"
+        app:lottie_rawRes="@raw/security"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="security_dashboard_page"
-    android:title="@string/security_settings_title">
+    android:title="@string/security_settings_title"
+    android:layout_below="@id/security_lottie">
 
     <!-- security_settings_status.xml -->
     <PreferenceCategory
@@ -72,3 +88,5 @@
         settings:keywords="@string/security_advanced_settings_keywords" />
 
 </PreferenceScreen>
+
+</RelativeLayout>

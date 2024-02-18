@@ -13,13 +13,29 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/display_lottie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:clickable="false"
+        app:lottie_rawRes="@raw/display"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="display_settings_screen"
     android:title="@string/display_settings"
-    settings:keywords="@string/keywords_display">
+    settings:keywords="@string/keywords_display"
+    android:layout_below="@id/display_lottie">
 
     <PreferenceCategory
         android:title="@string/category_name_brightness">
@@ -264,3 +280,5 @@
             android:fragment="com.android.settings.display.VrDisplayPreferencePicker"/>
     </PreferenceCategory>
 </PreferenceScreen>
+
+</RelativeLayout>

@@ -13,13 +13,29 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/location_lottie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:clickable="false"
+        app:lottie_rawRes="@raw/location"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="location_settings"
     android:title="@string/location_settings_title"
-    settings:keywords="@string/keywords_location">
+    settings:keywords="@string/keywords_location"
+    android:layout_below="@id/location_lottie">
 
     <PreferenceCategory
         android:key="recent_location_access"
@@ -74,3 +90,5 @@
         settings:searchable="false"
         settings:controller="com.android.settings.location.LocationSettingsFooterPreferenceController"/>
 </PreferenceScreen>
+
+</RelativeLayout>
