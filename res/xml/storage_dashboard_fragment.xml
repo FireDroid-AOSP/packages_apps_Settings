@@ -13,6 +13,29 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Storage Logo -->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="storage_anime"
+        android:layout="@layout/storage_anime"
+        android:selectable="false"/>
+       
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/storage_lottie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="false"
+        app:lottie_rawRes="@raw/storage"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -20,6 +43,7 @@
     android:key="storage_dashboard_fragment"
     android:title="@string/storage_settings"
     settings:keywords="@string/keywords_storage">
+
     <com.android.settingslib.widget.SettingsSpinnerPreference
         android:key="storage_spinner"
         android:order="1"
@@ -96,3 +120,5 @@
         android:title="@string/storage_other_users"
         android:order="201" />
 </PreferenceScreen>
+
+</LinearLayout>

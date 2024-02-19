@@ -13,6 +13,29 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Battery Logo -->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="battery_anime"
+        android:layout="@layout/battery_anime"
+        android:selectable="false"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/battery_lottie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="false"
+        app:lottie_rawRes="@raw/battery"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -76,3 +99,5 @@
         android:selectable="false"
         settings:searchable="false" />
 </PreferenceScreen>
+
+</LinearLayout>

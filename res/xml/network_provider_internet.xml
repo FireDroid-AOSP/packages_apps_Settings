@@ -13,6 +13,29 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Internet Logo -->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="internet_anime"
+        android:layout="@layout/internet_anime"
+        android:selectable="false"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/internet_lottie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="false"
+        app:lottie_rawRes="@raw/internet"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -142,3 +165,5 @@
         android:order="30"
         settings:controller="com.android.settings.network.AdaptiveConnectivityPreferenceController"/>
 </PreferenceScreen>
+
+</LinearLayout>
