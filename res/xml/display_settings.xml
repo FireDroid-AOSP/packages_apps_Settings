@@ -21,6 +21,12 @@
     android:title="@string/display_settings"
     settings:keywords="@string/keywords_display">
 
+    <!-- Display Logo -->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="dispaly_anime"
+        android:layout="@layout/display_anime"
+        android:selectable="false"/>
+
     <PreferenceCategory
         android:title="@string/category_name_brightness">
 
