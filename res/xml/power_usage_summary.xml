@@ -21,6 +21,12 @@
     android:title="@string/power_usage_summary_title"
     settings:keywords="@string/keywords_battery">
 
+    <!-- Battery Logo -->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="battery_anime"
+        android:layout="@layout/battery_anime"
+        android:selectable="false"/>
+
     <com.android.settingslib.widget.UsageProgressBarPreference
         android:key="battery_header"
         android:title="@string/summary_placeholder"

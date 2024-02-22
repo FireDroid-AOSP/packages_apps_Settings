@@ -21,6 +21,12 @@
     android:persistent="false"
     android:title="@string/accessibility_settings">
 
+    <!-- Accessibility Logo -->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="accessibility_anime"
+        android:layout="@layout/accessibility_anime"
+        android:selectable="false"/>
+        
     <PreferenceCategory
         android:key="user_installed_services_category"
         android:persistent="false"
